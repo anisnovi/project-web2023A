@@ -22,4 +22,17 @@ class KaryawanController extends Controller
         Karyawan::create($request->except(['_token','submit']));
         return redirect('/karyawan');
     }
+
+    public function update($id)
+    {
+        $karyawan = Karyawan::find($id);
+        return view('karyawan.update',compact(['karyawan']));
+    }
+
+   public function edit($id, Request $request)
+   {
+    $karyawan =  Karyawan::find($id);
+    $karyawan->update($request->except(['_token','submit']));
+    return redirect('/karyawan');
+   }
 }

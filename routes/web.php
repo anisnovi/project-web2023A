@@ -22,3 +22,5 @@ Route::get('/', function () {
 Route::get('/karyawan',[KaryawanController::class,'index']);
 Route::get('/karyawan/create',[KaryawanController::class,'create']);
 Route::post('/karyawan/store',[KaryawanController::class,'store']);
+Route::get('/karyawan/{id}/update',[KaryawanController::class,'update']);
+Route::put('/karyawan/{id}',[KaryawanController::class,'edit']);
