@@ -4,6 +4,7 @@
 <form action="/karyawan/{{$karyawan->id}}" method="POST">
     @method('put')
     @csrf
+    <input type="text" name="id" placeholder="Nama" value="{{$karyawan->id}}"><br>
     <input type="text" name="nama" placeholder="Nama" value="{{$karyawan->nama}}"><br>
     <input type="text" name="nik" placeholder="NIK" value="{{$karyawan->nik}}"><br>
     <select name="jenkel" id="">

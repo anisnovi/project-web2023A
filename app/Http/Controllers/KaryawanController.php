@@ -35,4 +35,11 @@ class KaryawanController extends Controller
     $karyawan->update($request->except(['_token','submit']));
     return redirect('/karyawan');
    }
+
+   public function destroy($id)
+   {
+        $karyawan = Karyawan::find($id);
+        $karyawan->delete();
+        return redirect('/karyawan');
+   }
 }

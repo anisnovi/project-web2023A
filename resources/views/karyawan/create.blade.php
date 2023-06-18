@@ -3,6 +3,7 @@
 
 <form action="/karyawan/store" method="POST">
     @csrf
+    <input type="text" name="id" placeholder="ID"><br>
     <input type="text" name="nama" placeholder="Nama"><br>
     <input type="text" name="nik" placeholder="NIK"><br>
     <select name="jenkel" id="">

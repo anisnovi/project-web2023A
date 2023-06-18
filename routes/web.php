@@ -24,3 +24,4 @@ Route::get('/karyawan/create',[KaryawanController::class,'create']);
 Route::post('/karyawan/store',[KaryawanController::class,'store']);
 Route::get('/karyawan/{id}/update',[KaryawanController::class,'update']);
 Route::put('/karyawan/{id}',[KaryawanController::class,'edit']);
+Route::delete('/karyawan/{id}',[KaryawanController::class,'destroy']);
