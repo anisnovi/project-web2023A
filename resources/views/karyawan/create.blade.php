@@ -25,6 +25,6 @@
     </select><br>
     <input type="text" name="gaji" placeholder="Gaji"><br>
     <textarea name="alamat" id="" cols="30" rows="10"></textarea><br>
-    <input type="submit" name="submit" value="Save">
+    <input type="submit" name="submit" value="Save" class="btn btn-info">
 
 </form>
