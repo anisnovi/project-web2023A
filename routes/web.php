@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\KaryawanController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/karyawan',[KaryawanController::class,'index']);
