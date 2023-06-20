@@ -35,8 +35,8 @@
                         <input type="password" name="password" class="form-control" id="password" required>
                     </div>
                     <div class="mb-3">
-                        <div>
-                            <button class="btn btn-primary">Register</button>
+                        <div class="d-grid">
+                            <button class="btn btn-primary">Save</button>
                         </div>
                     </div>
                    </form>
