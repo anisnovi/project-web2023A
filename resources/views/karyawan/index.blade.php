@@ -23,7 +23,7 @@
                             
                         <form action="{{ route ('logout') }}" method="POST" class="d-flex" role="search">
                             @csrf
-                            @method('DELETE')
+                            @method('delete')
                         
                             <button class="btn btn-danger" type="submit">{{ Auth::user()->name }} Logout</button>
                         </form>

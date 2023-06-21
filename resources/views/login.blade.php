@@ -24,7 +24,7 @@
                         @csrf
                             <div class="mb-3">
                                 <label for="email" class="form-label">E-mail Address</label>
-                                <input type="email" name="email" class="form-control" id="email" placeholder="@gmail.com" required>
+                                <input type="email" name="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="password" class="form-label">Password</label>
@@ -34,6 +34,12 @@
                                 <div class="d-grid">
                                     <button class="btn btn-primary">Login</button>
                                 </div>
+                                <div class="mb-3">
+                                    <div class="d-grid">
+                                        <a class="navbar-brand" href="/register">Registrasi</a>
+                                    </div>
+                                </div>
+                                
                             </div>
 
             </div>

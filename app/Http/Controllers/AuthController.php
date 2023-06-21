@@ -23,6 +23,9 @@ class AuthController extends Controller
         $user->password = Hash::make($request->password);
 
         $user->save();
+        {
+            return redirect('/login')->with('success', 'Login Successfully');
+        }
 
         return back()->with('success', 'Register successfully');
     }
@@ -39,10 +42,11 @@ class AuthController extends Controller
             'password' => $request->password, 
         ];
        
-        if (Auth::attempt($credetials)){
+        if (Auth::attempt($credetials))
+        {
             return redirect('/karyawan')->with('success', 'Login Successfully');
         }
-        return back()->with('error', 'Email or Password Not Found');
+            return back()->with('error', 'Email or Password Not Found');
     }
 
     public function logout()
