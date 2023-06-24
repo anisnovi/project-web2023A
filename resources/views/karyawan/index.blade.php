@@ -7,7 +7,14 @@
     <title>Data Karyawan</title>
 </head>
     <body>
-    <h1>DATA KARYAWAN</h1>
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <h1> DATA KARYAWAN </h1>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                tampilan dari data karyawan yang telah berhasil di input
+            </figcaption>
+        </figure>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                     <a class="navbar-brand" href="">Home</a>
@@ -66,7 +73,7 @@
                                     @csrf
                                     @method('delete')
                                     <a class="btn btn-warning btn-sm" href="/karyawan/{{$k->id}}/update">Update</a>
-                                    <input type="submit" name="submit" value="Delete" class="btn btn-danger btn-sm">
+                                    <input type="submit" name="submit" value="Delete" class="btn btn-danger btn-sm" onclick="confirm('sure ?')">
                                 </form>
                             </td>
                             
